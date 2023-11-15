@@ -1,5 +1,6 @@
-import Faker
+# import Faker
 from django.shortcuts import render
+from faker import Faker
 
 from web.models import ClientRegistrationForm, Client, Order, OrderProduct, Product
 
