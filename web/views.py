@@ -22,7 +22,6 @@ def contacts(request):
     return render(request, 'web/contacts.html', context=contact)
 
 
-
 def register_client(request):
     if request.method == 'POST':
         form = ClientRegistrationForm(request.POST)
@@ -160,10 +159,10 @@ def update_product_info(product_id, name=None, description=None, price=None, qua
     return product
 
 
-# Удаление товара
-def delete_product(product_id):
-    product = get_product_by_id(product_id)
-    product.delete()
+# # Удаление товара
+# def delete_product(product_id):
+#     product = get_product_by_id(product_id)
+#     product.delete()
 
 
 def generate_fake_products(request):
